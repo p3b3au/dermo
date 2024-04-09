@@ -6,7 +6,6 @@ body {
     width: 800px;
     margin: auto;
     min-height: 1vh;
-    background-color: pink;
 }
 
 /*EN TETE*/
@@ -32,6 +31,7 @@ body {
     width: 90px;
 }
 
+/* nav */
 nav {
     margin-bottom: 50px;
 }
@@ -46,11 +46,16 @@ nav li {
 }
 nav a {
     text-decoration: none;
-    color:black
+    color:black;
+    border-bottom: 1px white solid;
 }
-#adresse a{
 
-    color:black
+nav a:hover {
+    border-bottom: 1px #d589e6 solid;
+}
+
+nav a:link {
+    border-bottom: 1px #8a1ba3 solid;
 }
 
 /* H */
@@ -114,6 +119,19 @@ li{
 .cit {
     font-style: italic;
 }
+
+/*top*/
+#top{
+    text-align: center;
+    margin-bottom: -20px;
+}
+#top a{
+    padding: 6px 8px 2px 8px;
+    color:black;
+    text-decoration: none;
+    font-weight: bolder;
+    border:#8a1ba3 solid 1px;
+}
 /* footer */
 footer{
     margin-top: 30px;
@@ -124,7 +142,7 @@ footer{
     overflow: hidden;
     align-items: center;
     padding: 15px;
-    
+    margin-bottom: -66px;
 }
 footer div{
     width: 200px;
@@ -184,4 +202,8 @@ height: 20px;
 }
 #legales p{
     margin-block-start: 0px;
+}
+
+#adresse a{
+    color:black; 
 }
