@@ -1,3 +1,14 @@
-@media screen {
-    
-}
+@media (max-width: 600px) {
+        body{
+            width: auto;
+
+        }
+    section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    nav ul{
+        flex-direction: column;
+    }
+ }

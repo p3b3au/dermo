@@ -5,11 +5,19 @@
 @import url("responsive.css"); /* import responsive CSS */
 
 
+@media (min-width: 601px) {
 body {
     width: 800px;
     margin: auto;
 }
+section{
+    justify-content: space-between;
+}
+nav ul {
+    justify-content: space-between;
+   }
 
+}
 /*EN TETE*/
 
 #banner {
@@ -39,8 +47,8 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-around;
-}
+    justify-content: space-between;
+   }
 
 nav li {
     list-style: none;
@@ -78,7 +86,6 @@ main{
 }
 section {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 60px;
 }
@@ -208,3 +215,5 @@ height: 20px;
 #tel a{
     text-decoration: none;
 }
+
+
