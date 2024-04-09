@@ -2,17 +2,18 @@
     --second-color:#5f1a9e;
 } */
 
+@import url("responsive.css"); /* import responsive CSS */
+
+
 body {
     width: 800px;
     margin: auto;
-    min-height: 100vh;
 }
 
 /*EN TETE*/
 
 #banner {
     display: flex;
-    /*background: linear-gradient(to right, white, transparent); */
     background: linear-gradient(to right,white, transparent), url("img/banGlyc2.jpg");
     background-size: cover;
     overflow: hidden;
@@ -73,6 +74,7 @@ h4{
 /* MAIN */
 main{
     padding-bottom: 60px;
+    min-height: 60vh;
 }
 section {
     display: flex;
@@ -140,7 +142,6 @@ footer{
     overflow: hidden;
     align-items: center;
     padding: 15px;
-    /* margin-bottom: -66px; */
 }
 footer div{
     width: 200px;
