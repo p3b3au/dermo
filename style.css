@@ -5,7 +5,7 @@
 body {
     width: 800px;
     margin: auto;
-    min-height: 1vh;
+    min-height: 100vh;
 }
 
 /*EN TETE*/
@@ -54,8 +54,8 @@ nav a:hover {
     border-bottom: 1px #d589e6 solid;
 }
 
-nav a:link {
-    border-bottom: 1px #8a1ba3 solid;
+nav .selected{
+    border-bottom: 1px #8a1ba3 solid
 }
 
 /* H */
@@ -140,7 +140,7 @@ footer{
     overflow: hidden;
     align-items: center;
     padding: 15px;
-    margin-bottom: -66px;
+    /* margin-bottom: -66px; */
 }
 footer div{
     width: 200px;
@@ -182,7 +182,6 @@ height: 20px;
 }
 #reflexo > div > img{
     width: 440px;
-    height:fit-content;
 }
 
 #adresse tr:last-child{
