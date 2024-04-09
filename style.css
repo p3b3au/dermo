@@ -1,0 +1,185 @@
+/* :root{
+    --second-color:#5f1a9e;
+} */
+
+body {
+    width: 800px;
+    margin: auto;
+}
+
+/*EN TETE*/
+
+#banner {
+    display: flex;
+    /*background: linear-gradient(to right, white, transparent); */
+    background: linear-gradient(to right,white, transparent), url("img/banGlyc2.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+#title{
+    padding-left: 40px;
+}
+#title p{
+    font-size: large;
+    font-weight: bolder;
+    /* color: #3c0470; */
+}
+
+#banner img {
+    width: 90px;
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    color:black
+}
+#adresse a{
+
+    color:black
+}
+
+/* H */
+h1, h2 {
+    text-align: center;
+}
+h2{
+    margin-bottom: 40px;
+}
+h4{
+    margin-block-start: -0.8em;
+}
+
+
+/* MAIN */
+main{
+    padding-bottom: 60px;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+section img {
+    width: 220px;
+}
+
+.aside{
+    width: 220px;
+}
+
+
+table{
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+td, th{
+   
+    text-align: center;
+    padding: 4px 12px 4px 12px;
+}
+tr{
+    border-bottom: 1px black solid;
+}
+tr:last-child{
+    border-bottom: 0px;}
+
+.textIntro {
+    width: 500px
+}
+.textIntro div{
+   text-align: justify;
+   text-indent: 20px;
+}
+
+li{
+    text-indent: 0;
+}
+.cit {
+    font-style: italic;
+}
+/* footer */
+footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left,white, transparent), url("img/banGlyc3.jpg");
+    background-size: cover;
+    overflow: hidden;
+    align-items: center;
+    padding: 15px;
+    
+}
+footer div{
+    width: 200px;
+    text-align: center;
+}
+footer div:first-child{
+    text-align: left;
+}
+footer div:last-child{
+    text-align: right;
+}
+
+footer img{
+    width: 20px;
+}
+
+footer a{
+    color: black;
+    font-weight: bolder;
+
+}
+
+#social {
+height: 20px;
+     align-items:last baseline;
+}
+
+/* particulier */
+#propos h3{
+    text-align: center;
+    margin-block-start: -1.6em;
+    margin-block-end: 2em;
+}
+
+#reflexo > div{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+#reflexo > div > img{
+    width: 440px;
+    height:fit-content;
+}
+
+#adresse tr:last-child{
+    border-bottom: 0px;
+}
+
+#legales section{
+    align-items: start;
+}
+#legales h2, h3, h4{
+    margin-top: 40px;
+}
+#legales h4{
+    margin-bottom: 5px;
+}
+#legales p{
+    margin-block-start: 0px;
+}
