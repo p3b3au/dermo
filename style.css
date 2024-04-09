@@ -5,6 +5,8 @@
 body {
     width: 800px;
     margin: auto;
+    min-height: 1vh;
+    background-color: pink;
 }
 
 /*EN TETE*/
