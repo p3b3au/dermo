@@ -89,13 +89,11 @@ section img {
     width: 220px;
 }
 
-
 table{
     border-collapse: collapse;
     margin-bottom: 30px;
 }
 td, th{
-   
     text-align: center;
     padding: 4px 12px 4px 12px;
 }
@@ -206,4 +204,7 @@ height: 20px;
 
 #adresse a{
     color:black; 
+}
+#tel a{
+    text-decoration: none;
 }
