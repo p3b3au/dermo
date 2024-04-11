@@ -15,8 +15,7 @@
    display: block;
    position: relative;
    top: 10px;
-   left: 70%;
-   
+   /* left: 5px; */
    z-index: 1;
    
    -webkit-user-select: none;
@@ -44,7 +43,7 @@
    height: 32px;
    position: absolute;
    top: -7px;
-   left: -5px;
+   right: 7px;
    
    cursor: pointer;
    
@@ -57,6 +56,12 @@
  /*
   * Just a quick hamburger
   */
+#clicBox{
+  position: absolute;
+   top: -7px;
+   right: 7px;
+}
+
  #menuToggle span
  {
    display: block;
@@ -64,7 +69,7 @@
    height: 4px;
    margin-bottom: 6.5px;
    position: relative;
-   
+
    background: black;
    border-radius: 3px;
    
@@ -91,17 +96,17 @@
   * Transform all the slices of hamburger
   * into a crossmark.
   */
- #menuToggle input:checked ~ span
+ #menuToggle input:checked ~ #clicBox span
  {
    opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
+   transform: translate(7px, -21px) rotate(45deg) ;
    background: #232323;
  }
  
  /*
   * But let's hide the middle one.
   */
- #menuToggle input:checked ~ span:nth-last-child(3)
+ #menuToggle input:checked ~ #clicBox span:nth-last-child(3)
  {
    opacity: 0;
    transform: rotate(0deg) scale(0.2, 0.2);
@@ -110,9 +115,9 @@
  /*
   * Ohyeah and the last one should go the other direction
   */
- #menuToggle input:checked ~ span:nth-last-child(2)
+ #menuToggle input:checked ~ #clicBox span:nth-last-child(2)
  {
-   transform: rotate(-45deg) translate(0, -1px);
+   transform: translate(7px, 11px) rotate(-45deg) ;
  }
  
  /*
@@ -122,26 +127,31 @@
  #menu
  {
    position: absolute;
-   width: 60%;
-   margin: -40px 0 0 -250px;
-   padding: 50px;
-   padding-top: 125px;
+   box-sizing: border-box;
+   width: 100%;
+   margin-top: -10px;
+   padding-left: 50px;
+   padding-top: 12px;
+   padding-bottom: 12px;
    
-   background: #ededed;
+   background: linear-gradient(to right bottom,white 60%, #e7e6e7);
+   border-bottom: #8a1ba3 solid 1px;
+   border-right: #8a1ba3 solid 1px;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
    
    transform-origin: 0% 0%;
-   transform: translate(-100%, 0);
+   transform: translate(-120%, 0);
    
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
  
  #menu li
  {
-   padding: 8px 0;
+   padding: 8px;
    font-size: large;
+   margin-right: 18px;
  }
  
  /*
