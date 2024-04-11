@@ -217,3 +217,28 @@ height: 20px;
 }
 
 
+/* TARIFS */
+dl{
+    width: 75%;
+}
+dt {
+    float:left;
+    clear:both;
+    background:#fff;
+    position:relative;
+    top:5px;
+    padding-right:5px;
+    }
+    
+    dd {
+    text-align:right;
+    margin-bottom:2px;
+    margin-left:0;
+    border-bottom:1px dashed #000;
+    }
+    span {
+    padding-left:5px;
+    position:relative;
+    top:5px;
+    background:#fff;
+    }
