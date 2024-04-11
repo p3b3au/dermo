@@ -1,17 +1,25 @@
 @media (max-width: 600px) {
-        body{
-            width: auto;
-
+    body{
+        width: auto;
         }
     section{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         }
     nav ul{
         flex-direction: column;
     }
     .hide{
         display: none;
+    }
+    #title p{
+        display: none
+    }
+    #primaryNav{
+        display: none;
+    }
+    #burger{
+        display: block;
     }
  }

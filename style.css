@@ -3,7 +3,7 @@
 } */
 
 @import url("responsive.css"); /* import responsive CSS */
-
+@import url(styleBurger.css);
 
 @media (min-width: 601px) {
 body {
@@ -15,6 +15,9 @@ section{
 }
 nav ul {
     justify-content: space-between;
+   }
+#burger{
+    display: none;
    }
 
 }
@@ -53,7 +56,7 @@ nav ul {
 nav li {
     list-style: none;
 }
-nav a {
+header a {
     text-decoration: none;
     color:black;
     border-bottom: 1px white solid;
@@ -243,3 +246,21 @@ dt {
     top:5px;
     background:#fff;
     }
+
+
+    /*BURGER*/
+    /* #burger{
+        display:none
+    } */
+
+    /* #burger:target{
+        display: block
+    }
+    #iconeBurger{
+        text-align: center;
+        font-size:x-large;
+        font-weight: bolder;
+    }
+    #closeBurger{
+        text-align: right;
+    } */
