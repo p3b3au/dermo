@@ -9,6 +9,7 @@
 body {
     width: 800px;
     margin: auto;
+    min-width: 900px;
 }
 section{
     justify-content: space-between;
